@@ -1,0 +1,53 @@
+C:\Users\Andre\OneDrive\Рабочий стол\DiplomaProject\ChatClient\bin\Debug\ChatClient.exe.config
+C:\Users\Andre\OneDrive\Рабочий стол\DiplomaProject\ChatClient\bin\Debug\ChatClient.exe
+C:\Users\Andre\OneDrive\Рабочий стол\DiplomaProject\ChatClient\bin\Debug\ChatClient.pdb
+C:\Users\Andre\OneDrive\Рабочий стол\DiplomaProject\ChatClient\obj\Debug\ChatClient.csproj.AssemblyReference.cache
+C:\Users\Andre\OneDrive\Рабочий стол\DiplomaProject\ChatClient\obj\Debug\MainWindow.g.cs
+C:\Users\Andre\OneDrive\Рабочий стол\DiplomaProject\ChatClient\obj\Debug\App.g.cs
+C:\Users\Andre\OneDrive\Рабочий стол\DiplomaProject\ChatClient\obj\Debug\ChatClient_MarkupCompile.cache
+C:\Users\Andre\OneDrive\Рабочий стол\DiplomaProject\ChatClient\obj\Debug\ChatClient_MarkupCompile.lref
+C:\Users\Andre\OneDrive\Рабочий стол\DiplomaProject\ChatClient\obj\Debug\MainWindow.baml
+C:\Users\Andre\OneDrive\Рабочий стол\DiplomaProject\ChatClient\obj\Debug\ChatClient.g.resources
+C:\Users\Andre\OneDrive\Рабочий стол\DiplomaProject\ChatClient\obj\Debug\ChatClient.Properties.Resources.resources
+C:\Users\Andre\OneDrive\Рабочий стол\DiplomaProject\ChatClient\obj\Debug\ChatClient.csproj.GenerateResource.cache
+C:\Users\Andre\OneDrive\Рабочий стол\DiplomaProject\ChatClient\obj\Debug\ChatClient.csproj.CoreCompileInputs.cache
+C:\Users\Andre\OneDrive\Рабочий стол\DiplomaProject\ChatClient\obj\Debug\ChatClient.exe
+C:\Users\Andre\OneDrive\Рабочий стол\DiplomaProject\ChatClient\obj\Debug\ChatClient.pdb
+C:\Users\shkorbatov\Desktop\DiplomaProject\ChatClient\obj\Debug\ChatClient.csproj.AssemblyReference.cache
+C:\Users\shkorbatov\Desktop\DiplomaProject\ChatClient\obj\Debug\MainWindow.g.cs
+C:\Users\shkorbatov\Desktop\DiplomaProject\ChatClient\obj\Debug\App.g.cs
+C:\Users\shkorbatov\Desktop\DiplomaProject\ChatClient\obj\Debug\ChatClient_MarkupCompile.cache
+C:\Users\shkorbatov\Desktop\DiplomaProject\ChatClient\obj\Debug\ChatClient_MarkupCompile.lref
+C:\Users\shkorbatov\Desktop\DiplomaProject\ChatClient\obj\Debug\ChatClient.exe
+C:\Users\shkorbatov\Desktop\DiplomaProject\ChatClient\obj\Debug\ChatClient.pdb
+C:\Users\shkorbatov\Desktop\DiplomaProject\ChatClient\bin\Debug\ChatClient.exe.config
+C:\Users\shkorbatov\Desktop\DiplomaProject\ChatClient\bin\Debug\ChatClient.exe
+C:\Users\shkorbatov\Desktop\DiplomaProject\ChatClient\bin\Debug\ChatClient.pdb
+C:\Users\shkorbatov\Desktop\DiplomaProject\ChatClient\obj\Debug\MainWindow.baml
+C:\Users\shkorbatov\Desktop\DiplomaProject\ChatClient\obj\Debug\ChatClient.g.resources
+C:\Users\shkorbatov\Desktop\DiplomaProject\ChatClient\obj\Debug\ChatClient.Properties.Resources.resources
+C:\Users\shkorbatov\Desktop\DiplomaProject\ChatClient\obj\Debug\ChatClient.csproj.GenerateResource.cache
+C:\Users\shkorbatov\Desktop\DiplomaProject\ChatClient\obj\Debug\ChatClient.csproj.CoreCompileInputs.cache
+C:\Users\Andre\OneDrive\Рабочий стол\DiplomaProject\ChatClient\bin\Debug\DiplomaProject.dll
+C:\Users\Andre\OneDrive\Рабочий стол\DiplomaProject\ChatClient\bin\Debug\DiplomaProject.pdb
+C:\Users\Andre\OneDrive\Рабочий стол\DiplomaProject\ChatClient\bin\Debug\DiplomaProject.dll.config
+C:\Users\Andre\OneDrive\Рабочий стол\DiplomaProject\ChatClient\obj\Debug\ChatClient.csproj.CopyComplete
+C:\Users\EreminAV\Desktop\DiplomaProject\ChatClient\obj\Debug\ChatClient.csproj.AssemblyReference.cache
+C:\Users\EreminAV\Desktop\DiplomaProject\ChatClient\obj\Debug\MainWindow.g.cs
+C:\Users\EreminAV\Desktop\DiplomaProject\ChatClient\obj\Debug\App.g.cs
+C:\Users\EreminAV\Desktop\DiplomaProject\ChatClient\obj\Debug\ChatClient_MarkupCompile.cache
+C:\Users\EreminAV\Desktop\DiplomaProject\ChatClient\obj\Debug\ChatClient_MarkupCompile.lref
+C:\Users\EreminAV\Desktop\DiplomaProject\ChatClient\obj\Debug\ChatClient.exe
+C:\Users\EreminAV\Desktop\DiplomaProject\ChatClient\obj\Debug\ChatClient.pdb
+C:\Users\EreminAV\Desktop\DiplomaProject\ChatClient\bin\Debug\ChatClient.exe.config
+C:\Users\EreminAV\Desktop\DiplomaProject\ChatClient\bin\Debug\ChatClient.exe
+C:\Users\EreminAV\Desktop\DiplomaProject\ChatClient\bin\Debug\ChatClient.pdb
+C:\Users\EreminAV\Desktop\DiplomaProject\ChatClient\bin\Debug\DiplomaProject.dll
+C:\Users\EreminAV\Desktop\DiplomaProject\ChatClient\bin\Debug\DiplomaProject.pdb
+C:\Users\EreminAV\Desktop\DiplomaProject\ChatClient\bin\Debug\DiplomaProject.dll.config
+C:\Users\EreminAV\Desktop\DiplomaProject\ChatClient\obj\Debug\MainWindow.baml
+C:\Users\EreminAV\Desktop\DiplomaProject\ChatClient\obj\Debug\ChatClient.g.resources
+C:\Users\EreminAV\Desktop\DiplomaProject\ChatClient\obj\Debug\ChatClient.Properties.Resources.resources
+C:\Users\EreminAV\Desktop\DiplomaProject\ChatClient\obj\Debug\ChatClient.csproj.GenerateResource.cache
+C:\Users\EreminAV\Desktop\DiplomaProject\ChatClient\obj\Debug\ChatClient.csproj.CoreCompileInputs.cache
+C:\Users\EreminAV\Desktop\DiplomaProject\ChatClient\obj\Debug\ChatClient.csproj.CopyComplete

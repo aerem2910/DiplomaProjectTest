@@ -1,0 +1,44 @@
+C:\Users\Andre\source\repos\DiplomaProject\ChatHost\bin\Debug\ChatHost.exe.config
+C:\Users\Andre\source\repos\DiplomaProject\ChatHost\bin\Debug\ChatHost.exe
+C:\Users\Andre\source\repos\DiplomaProject\ChatHost\bin\Debug\ChatHost.pdb
+C:\Users\Andre\source\repos\DiplomaProject\ChatHost\bin\Debug\DiplomaProject.dll
+C:\Users\Andre\source\repos\DiplomaProject\ChatHost\bin\Debug\DiplomaProject.pdb
+C:\Users\Andre\source\repos\DiplomaProject\ChatHost\bin\Debug\DiplomaProject.dll.config
+C:\Users\Andre\source\repos\DiplomaProject\ChatHost\obj\Debug\ChatHost.csproj.AssemblyReference.cache
+C:\Users\Andre\source\repos\DiplomaProject\ChatHost\obj\Debug\ChatHost.csproj.CoreCompileInputs.cache
+C:\Users\Andre\source\repos\DiplomaProject\ChatHost\obj\Debug\ChatHost.csproj.CopyComplete
+C:\Users\Andre\source\repos\DiplomaProject\ChatHost\obj\Debug\ChatHost.exe
+C:\Users\Andre\source\repos\DiplomaProject\ChatHost\obj\Debug\ChatHost.pdb
+C:\Users\Andre\OneDrive\Рабочий стол\DiplomaProject\ChatHost\bin\Debug\ChatHost.exe.config
+C:\Users\Andre\OneDrive\Рабочий стол\DiplomaProject\ChatHost\bin\Debug\ChatHost.exe
+C:\Users\Andre\OneDrive\Рабочий стол\DiplomaProject\ChatHost\bin\Debug\ChatHost.pdb
+C:\Users\Andre\OneDrive\Рабочий стол\DiplomaProject\ChatHost\bin\Debug\DiplomaProject.dll
+C:\Users\Andre\OneDrive\Рабочий стол\DiplomaProject\ChatHost\bin\Debug\DiplomaProject.pdb
+C:\Users\Andre\OneDrive\Рабочий стол\DiplomaProject\ChatHost\bin\Debug\DiplomaProject.dll.config
+C:\Users\Andre\OneDrive\Рабочий стол\DiplomaProject\ChatHost\obj\Debug\ChatHost.csproj.AssemblyReference.cache
+C:\Users\Andre\OneDrive\Рабочий стол\DiplomaProject\ChatHost\obj\Debug\ChatHost.csproj.CoreCompileInputs.cache
+C:\Users\Andre\OneDrive\Рабочий стол\DiplomaProject\ChatHost\obj\Debug\ChatHost.csproj.CopyComplete
+C:\Users\Andre\OneDrive\Рабочий стол\DiplomaProject\ChatHost\obj\Debug\ChatHost.exe
+C:\Users\Andre\OneDrive\Рабочий стол\DiplomaProject\ChatHost\obj\Debug\ChatHost.pdb
+C:\Users\shkorbatov\Desktop\DiplomaProject\ChatHost\bin\Debug\ChatHost.exe.config
+C:\Users\shkorbatov\Desktop\DiplomaProject\ChatHost\bin\Debug\ChatHost.exe
+C:\Users\shkorbatov\Desktop\DiplomaProject\ChatHost\bin\Debug\ChatHost.pdb
+C:\Users\shkorbatov\Desktop\DiplomaProject\ChatHost\bin\Debug\DiplomaProject.dll
+C:\Users\shkorbatov\Desktop\DiplomaProject\ChatHost\bin\Debug\DiplomaProject.pdb
+C:\Users\shkorbatov\Desktop\DiplomaProject\ChatHost\bin\Debug\DiplomaProject.dll.config
+C:\Users\shkorbatov\Desktop\DiplomaProject\ChatHost\obj\Debug\ChatHost.csproj.AssemblyReference.cache
+C:\Users\shkorbatov\Desktop\DiplomaProject\ChatHost\obj\Debug\ChatHost.csproj.CoreCompileInputs.cache
+C:\Users\shkorbatov\Desktop\DiplomaProject\ChatHost\obj\Debug\ChatHost.csproj.CopyComplete
+C:\Users\shkorbatov\Desktop\DiplomaProject\ChatHost\obj\Debug\ChatHost.exe
+C:\Users\shkorbatov\Desktop\DiplomaProject\ChatHost\obj\Debug\ChatHost.pdb
+C:\Users\EreminAV\Desktop\DiplomaProject\ChatHost\bin\Debug\ChatHost.exe.config
+C:\Users\EreminAV\Desktop\DiplomaProject\ChatHost\bin\Debug\ChatHost.exe
+C:\Users\EreminAV\Desktop\DiplomaProject\ChatHost\bin\Debug\ChatHost.pdb
+C:\Users\EreminAV\Desktop\DiplomaProject\ChatHost\bin\Debug\DiplomaProject.dll
+C:\Users\EreminAV\Desktop\DiplomaProject\ChatHost\bin\Debug\DiplomaProject.pdb
+C:\Users\EreminAV\Desktop\DiplomaProject\ChatHost\bin\Debug\DiplomaProject.dll.config
+C:\Users\EreminAV\Desktop\DiplomaProject\ChatHost\obj\Debug\ChatHost.csproj.AssemblyReference.cache
+C:\Users\EreminAV\Desktop\DiplomaProject\ChatHost\obj\Debug\ChatHost.csproj.CoreCompileInputs.cache
+C:\Users\EreminAV\Desktop\DiplomaProject\ChatHost\obj\Debug\ChatHost.csproj.CopyComplete
+C:\Users\EreminAV\Desktop\DiplomaProject\ChatHost\obj\Debug\ChatHost.exe
+C:\Users\EreminAV\Desktop\DiplomaProject\ChatHost\obj\Debug\ChatHost.pdb
