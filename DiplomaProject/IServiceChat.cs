@@ -1,5 +1,4 @@
 ﻿using System.ServiceModel;
-using System.Runtime.Serialization;
 
 namespace DiplomProject
 {
@@ -18,20 +17,11 @@ namespace DiplomProject
         [OperationContract(IsOneWay = true)]
         void SendImage(byte[] imageData, string imageName, int id);
 
-        [OperationContract]
-        byte[] GetImage(int index);
+        [OperationContract(IsOneWay = true)]
+        void DisplayImage(byte[] imageData, string imageName);
     }
 
-    [DataContract]
-    public class ImageMessage
-    {
-        [DataMember]
-        public string ImageName { get; set; }
-
-        [DataMember]
-        public byte[] ImageData { get; set; }
-    }
-
+    [ServiceContract]
     public interface IServerChatCallback
     {
         [OperationContract(IsInitiating = true)]
@@ -39,5 +29,12 @@ namespace DiplomProject
 
         [OperationContract(IsOneWay = true)]
         void ImageCallback(ImageMessage imageMessage, int id, string senderName);
+
+        [OperationContract(IsOneWay = true)]
+        void DisplayImage(byte[] imageData, string imageName);
+
+
+        
     }
+
 }
