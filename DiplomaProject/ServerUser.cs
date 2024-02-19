@@ -1,9 +1,8 @@
-﻿using System.ServiceModel;
-
+using System.ServiceModel;
 
 namespace DiplomProject
 {
-    internal class ServerUser
+    public class ServerUser
     {
         public int ID { get; set; }
         public string Name { get; set; }
