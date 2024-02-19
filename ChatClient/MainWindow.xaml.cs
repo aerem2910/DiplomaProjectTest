@@ -1,11 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.ServiceModel;
-using System.Windows;
-using System.Windows.Controls;
 using ChatClient.ServiceChat;
 using Microsoft.Win32;
+using System.IO;
+using System.ServiceModel;
+using System.Windows.Media.Imaging;
+using System.Windows;
+using System;
+using System.Windows.Controls;
+using DiplomProject;
+using System.Security.Cryptography;
+
+
 
 namespace ChatClient
 {
@@ -15,18 +19,16 @@ namespace ChatClient
         private ServiceChatClient client;
         private int ID;
         private OpenFileDialog fileDialog;
-        private ListBox lbImages;
-        private readonly List<byte[]> imageList = new List<byte[]>();
+        private SaveFileDialog saveFileDialog;
 
         public MainWindow()
         {
             InitializeComponent();
             fileDialog = new OpenFileDialog();
-            lbImages = new ListBox();
-
-           lbImages.SelectionChanged += LbImages_SelectionChanged;
+            saveFileDialog = new SaveFileDialog();
+            fileDialog.Filter = "Image Files (.png, .jpg, .bmp)|*.png;*.jpg;*.bmp";
+            saveFileDialog.Filter = "Image Files (.png, .jpg, .bmp)|*.png;*.jpg;*.bmp";
         }
-
 
         private void ConnectUser()
         {
@@ -84,12 +86,12 @@ namespace ChatClient
             lbChat.ScrollIntoView(lbChat.Items[lbChat.Items.Count - 1]);
         }
 
-        public void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
             DisconnectUser();
         }
 
-        public void tbMessage_KeyDown(object sender, System.Windows.Input.KeyEventArgs e)
+        private void tbMessage_KeyDown(object sender, System.Windows.Input.KeyEventArgs e)
         {
             try
             {
@@ -108,63 +110,8 @@ namespace ChatClient
             }
         }
 
-        public void ImageCallback(ImageMessage imageMessage, int id, string senderName)
-        {
-            try
-            {
-                
-                Dispatcher.Invoke(() =>
-                {
-                    lbImages.Items.Add($"{senderName}: {imageMessage.ImageName}");
-                });
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Ошибка при обработке обратного вызова изображения: {ex.Message}");
-            }
-        }
 
-
-        public void ListboxSelected()
-        {
-            try
-            {
-                if (lbImages.SelectedIndex >= 0)
-                {
-                    // Получение байтового массива изображения по индексу из списка
-                    byte[] imageData = client.GetImage(lbImages.SelectedIndex);
-
-                    // Сохранение изображения в файл
-                    string savePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "ReceivedImage.jpg");
-                    File.WriteAllBytes(savePath, imageData);
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error loading image: {ex.Message}");
-            }
-        }
-
-        public void LbImages_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            ListboxSelected();
-        }
-
-        private byte[] LoadImageToByteArray(string filePath)
-        {
-            try
-            {
-                return File.ReadAllBytes(filePath);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error loading image to byte array: {ex.Message}");
-                return null;
-            }
-        }
-
-
-        private void btnSendImage_Click(object sender, RoutedEventArgs e)
+        public void btnSendImage_Click(object sender, RoutedEventArgs e)
         {
             if (isConnected)
             {
@@ -172,14 +119,35 @@ namespace ChatClient
                 {
                     if (fileDialog.ShowDialog() == true)
                     {
-                        // Загрузка изображения в байтовый массив
-                        byte[] imageData = LoadImageToByteArray(fileDialog.FileName);
+                        //string imagePath = fileDialog.FileName;
+                        //byte[] imageData = ImageConverter.ConvertImageToBytes(imagePath);
+                        //string imageName = Path.GetFileName(imagePath);
 
-                        if (imageData != null)
+                        //ImageMessage imageMessage = new ImageMessage
+                        //{
+                        //    ImageName = imageName,
+                        //    ImageData = imageData
+                        //};
+
+
+                        string imagePath = fileDialog.FileName;
+                        byte[] dataUpload = ImageConverter.ConvertImageToBytes(imagePath);
+                        ListBoxItem lbi = new ListBoxItem();
+                        lbi.Tag = dataUpload; // Сохранение массива байтов в Tag
+                        lbi.Content = "Image " + lbChat.Items.Count; // Отображение текста
+                        lbChat.Items.Add(lbi);
+
+                        DiplomProject.ServiceChat sc = new DiplomProject.ServiceChat();
+
+                        ImageMessage imageMessage = new ImageMessage
                         {
-                            // Отправка изображения на сервер
-                            client.SendImage(imageData, Path.GetFileName(fileDialog.FileName), ID);
-                        }
+                            ImageName = Path.GetFileName(imagePath),
+                            ImageData = dataUpload
+                        };
+
+                        sc.SendImage(dataUpload, Path.GetFileName(fileDialog.FileName), ID);
+
+                        DisplayImage(dataUpload, Path.GetFileName(fileDialog.FileName));
                     }
                 }
                 catch (Exception ex)
@@ -188,17 +156,74 @@ namespace ChatClient
                 }
             }
         }
-        private void Window_Loaded(object sender, RoutedEventArgs e)
+        
+
+        public void ImageCallback(ImageMessage imageMessage, int id, string senderName)
         {
-            
+            // Вызвать метод для отображения изображения в интерфейсе
+            DisplayImage(imageMessage.ImageData, imageMessage.ImageName);
         }
 
+        public void DisplayImage(byte[] imageData, string imageName)
+        {
+            try
+            {
+                //using (MemoryStream stream = new MemoryStream(imageData))
+                //{
+                //    BitmapImage image = new BitmapImage();
+                //    image.BeginInit();
+                //    image.StreamSource = stream;
+                //    image.EndInit();
+                //    // Ваш код для отображения изображения в интерфейсе, например:
+                //    imgPreview.Source = image;
+                //}
 
+                ListBoxItem lbi = new ListBoxItem();
+                lbi.Tag = imageData; // Сохранение массива байтов в Tag
+                lbi.Content = imageName; // Отображение текста
+                lbChat.Items.Add(lbi);
 
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error displaying image: {ex.Message}");
+            }
+        }
 
+        //public void DisplayImage(byte[] imageData, string imageName)
+        //{
+        //    try
+        //    {
+        //        using (MemoryStream stream = new MemoryStream(imageData))
+        //        {
+        //            BitmapImage image = new BitmapImage();
+        //            image.BeginInit();
+        //            image.StreamSource = stream;
+        //            image.EndInit();
+        //            imgPreview.Source = image;
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        MessageBox.Show($"Error displaying image: {ex.Message}");
+        //    }
+        //}
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            // Ваш код, который должен быть выполнен при загрузке окна
+        }
+
+        private void lbChat_MouseRightButtonUp(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            if (lbChat.SelectedItem != null)
+            {
+                if (saveFileDialog.ShowDialog() == true)
+                {
+                    byte[] dataDownload = (byte[])((lbChat.SelectedItem as ListBoxItem).Tag); // Извлечение массива байтов из Tag
+                    File.WriteAllBytes(saveFileDialog.FileName, dataDownload);
+                }
+            }
+        }
     }
-
-
-
 }
-
